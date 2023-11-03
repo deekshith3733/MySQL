@@ -1,0 +1,11 @@
+List the product name, standard price, and finish for all tables that cost more than $300 and all desks that cost more than $300.
+
+Computer Desk	375.00	Natural Ash
+Writers Desk	325.00	Cherry
+8-Drawer Desk	750.00	White Ash
+Dining Table	800.00	Natural Ash
+
+SELECT ProductDescription AS ProductName, ProductStandardPrice, ProductFinish
+FROM Product_T
+WHERE (ProductDescription LIKE '%Table' OR ProductDescription LIKE '%Desk')
+      AND ProductStandardPrice > 300;

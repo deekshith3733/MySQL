@@ -1,0 +1,8 @@
+6. What is the average standard price for the products with a product finish of natural ash?
+   
+ AverageStandardPrice 7, 'Dining Table', 800, 2
+
+
+SELECT AVG(ProductStandardPrice) AS AverageStandardPrice
+FROM Product_T
+WHERE ProductFinish = 'Natural Ash';

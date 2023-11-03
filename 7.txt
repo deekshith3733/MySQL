@@ -1,0 +1,14 @@
+Provide a listing of all of the products that includes the difference between its standard price and the overall average standard price of all products.
+
+1	End Table	175.00	-265.625000
+2	Coffee Table	200.00	-240.625000
+3	Computer Desk	375.00	-65.625000
+4	Entertainment Center	650.00	209.375000
+5	Writers Desk	325.00	-115.625000
+6	8-Drawer Desk	750.00	309.375000
+7	Dining Table	800.00	359.375000
+8	Computer Desk	250.00	-190.625000
+
+SELECT ProductID, ProductDescription, ProductStandardPrice,
+       ProductStandardPrice - (SELECT AVG(ProductStandardPrice) FROM Product_T) AS PriceDifference
+FROM Product_T;

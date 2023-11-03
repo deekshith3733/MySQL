@@ -1,0 +1,9 @@
+What is the product name, product ID and price of most expensive product in the product table?
+
+
+Dining Table	7	800.00
+
+SELECT ProductDescription AS ProductName, ProductID, ProductStandardPrice AS Price
+FROM Product_T
+ORDER BY Price DESC
+LIMIT 1;

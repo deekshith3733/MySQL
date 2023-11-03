@@ -1,0 +1,13 @@
+Provide a listing of the unique product IDs for the products in the Order Line table.
+
+1
+2
+4
+3
+6
+8
+5
+7
+
+SELECT DISTINCT ProductID
+FROM OrderLine_T;

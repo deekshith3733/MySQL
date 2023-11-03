@@ -1,0 +1,15 @@
+
+Provide a list of the product name, product ID, and unit price for all of the products in the Product table, sorted in alphabetical order by product name
+
+8-Drawer Desk	6	750.00
+Coffee Table	2	200.00
+Computer Desk	3	375.00
+Computer Desk	8	250.00
+Dining Table	7	800.00
+End Table	1	175.00
+Entertainment Center	4	650.00
+Writers Desk	5	325.00
+
+SELECT ProductDescription AS ProductName, ProductID, ProductStandardPrice AS UnitPrice
+FROM Product_T
+ORDER BY ProductName ASC;

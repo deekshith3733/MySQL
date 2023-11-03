@@ -1,0 +1,16 @@
+What is the standard price and standard price if increased by 15% for every product?
+
+
+
+1	End Table	175.00	201.2500
+2	Coffee Table	200.00	230.0000
+3	Computer Desk	375.00	431.2500
+4	Entertainment Center	650.00	747.5000
+5	Writers Desk	325.00	373.7500
+6	8-Drawer Desk	750.00	862.5000
+7	Dining Table	800.00	920.0000
+8	Computer Desk	250.00	287.5000
+
+SELECT ProductID, ProductDescription, ProductStandardPrice,
+       ProductStandardPrice * 1.15 AS StandardPriceWithIncrease
+from product_t;

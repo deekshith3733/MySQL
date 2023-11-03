@@ -1,0 +1,14 @@
+Which states have more than one customer? List the states and the number of customers for those states
+
+	ProductID
+	1
+	2
+	4
+	3
+	6
+	8
+	5
+	7
+
+SELECT DISTINCT ProductID
+FROM OrderLine_T;
