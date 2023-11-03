@@ -1,0 +1,25 @@
+Provide a list all of the Customer ID, Customer Names, and States and sort the list in alphabetical order by Customer Name.
+
+
+
+11	American Euro Lifestyles	NJ
+12	Battle Creek Furniture	MI
+8	California Classics	CA
+1	Contemporary Casuals	FL
+4	Eastern Furniture	NJ
+6	Furniture Gallery	CO
+13	Heritage Furnishings	PA
+3	Home Furnishings	NY
+5	Impressions	CA
+14	Kaneohe Homes	HI
+9	M and H Casual Furniture	FL
+15	Mountain Scenes	UT
+7	Period Furniture	WA
+10	Seminole Interiors	FL
+2	Value Furniture	TX
+
+
+
+SELECT CustomerID, CustomerName, customerstate
+FROM Customer_t
+ORDER BY CustomerName ASC;
