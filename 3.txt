@@ -1,0 +1,8 @@
+What is the full address of the customer named Kaneohe Homes? That includes the street, city, state, and zip code
+
+
+Kaneohe	HI	96744-2537
+
+SELECT CustomerCity, CustomerState, CustomerPostalCode
+FROM Customer_t
+WHERE CustomerName = 'Kaneohe Homes';
